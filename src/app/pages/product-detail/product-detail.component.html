@@ -1,0 +1,16 @@
+<div class="products">
+    <div class="products-div" *ngIf = "product">
+        <h3>{{product.name}}</h3> 
+        <img src="{{product.image}}" alt="{{product.name}}"/>
+        <p>{{product.description}}</p>
+        <h3>PRECIO: {{product.price}}</h3>
+        <p>valoración:{{product.stars}} /5</p>
+        <div class="products-button">
+            <button routerLink="/products">Volver</button>
+            <button (click)="editar()">Editar</button>
+            <button (click)="borrar()">Borrar</button>
+        </div>   
+    </div>
+</div>
+
+

@@ -1,0 +1,30 @@
+<div class="products">
+<form [formGroup]="productForm" (ngSubmit)="addProduct()" class="products-form">
+    <div>
+        <input type="text" placeholder="nombre" formControlName="name">
+        <p *ngIf = "(submited && productForm?.get('name')?.hasError('required'))">Este campo es requerido</p>
+    </div>
+    <div>
+        <input type="text" placeholder="precio" formControlName="price">
+        <p *ngIf = "(submited && productForm?.get('price')?.hasError('required'))">Este campo es requerido</p>
+    </div>
+    <div>
+        <input type="text" placeholder="descripcion" formControlName="description">
+    </div>
+    <div>
+        <input type="text" placeholder="valoracion" formControlName="stars">
+    </div>
+    <div>
+        <input type="text" placeholder="imagen" formControlName="image">
+        <p *ngIf = "(submited && productForm?.get('image')?.hasError('required'))">Este campo es requerido</p>
+    </div>
+    <button>Añadir</button>
+</form>
+<div class="products-div" *ngIf ="product">
+        <h3>{{product.name}}</h3> 
+        <img src="{{product.image}}" alt="{{product.name}}"/>
+        <p>{{product.description}}</p>
+        <h3>PRECIO: {{product.price}}</h3>
+        <p>valoración:{{product.stars}} /5</p>
+</div>
+</div>
