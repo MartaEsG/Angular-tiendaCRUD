@@ -10,6 +10,8 @@ import { ProductDetailComponent } from './pages/product-detail/product-detail.co
 import { EditProductComponent } from './pages/edit-product/edit-product.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './pages/home/home.component';
+import { FooterComponent } from './pages/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProductsComponent,
     ProductDetailComponent,
     EditProductComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

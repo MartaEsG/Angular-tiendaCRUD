@@ -1,0 +1,36 @@
+.home {
+    background-image: url("https://img.freepik.com/vector-gratis/moda-accesorios-ropa-patrones-fisuras_1284-3636.jpg?w=2000");
+    padding: 50px;
+    min-height: 600px;
+}
+.content {
+    border: 7px cadetblue double;  
+    border-radius: 10px;
+    background-color: white;
+    
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: cadetblue;
+    margin: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: cadetblue;
+    margin: 20px;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 30px;
+}
+
+}

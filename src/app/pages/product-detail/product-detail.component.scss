@@ -3,10 +3,11 @@
     justify-content: center;
     align-items: center;
     background-image: url("https://img.freepik.com/vector-gratis/moda-accesorios-ropa-patrones-fisuras_1284-3636.jpg?w=2000");
+    min-height: 720px;
     
 
     &-div{
-        display: flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px; 
