@@ -1,5 +1,7 @@
+<input class="input" type="text" #filtro (input)="filtrar(filtro.value)" placeholder="buscar...">
+
 <div class="products">
-    <div class="product" *ngFor = "let product of listado">
+    <div class="product" *ngFor = "let product of filteredProducts">
         <h4>{{product.name}}</h4> 
         <img src="{{product.image}}" alt="{{product.name}}"/>
         <button routerLink="/products/{{product.id}}">Más información </button>  
